@@ -42,10 +42,10 @@ const ExpenseItem = (props) => {
         <tr>
         <td>{props.name}</td>
         <td>{currency}{props.cost}</td>
-        <td ><FcPlus  onClick={event=> increaseAllocation(props.name)}></FcPlus></td>
-        <td><FaMinusCircle style={{ backgroundColor: 'white', color: 'red'}}
+        <td><FcPlus  size='1.7em' onClick={event=> increaseAllocation(props.name)}></FcPlus></td>
+        <td><FaMinusCircle size='1.6em' style={{ backgroundColor: 'white', color: 'red'}}
            onClick={event => decreaseAllocation(props.name)}></FaMinusCircle></td>
-        <td><TiDelete size='1.5em' onClick={handleDeleteExpense}></TiDelete></td>
+        <td><TiDelete size='2em' onClick={handleDeleteExpense}></TiDelete></td>
         </tr>
     );
 };
